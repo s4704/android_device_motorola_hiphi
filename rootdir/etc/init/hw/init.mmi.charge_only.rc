@@ -14,6 +14,8 @@ on property:init.svc.vendor.mmi-usb-sh=stopped && property:ro.boot.mode=charger 
     setprop sys.usb.config charging,adb
 
 on moto-charger
+    stop qseecom-service
+    stop hwservicemanager
     stop vendor.sensors
     trigger firmware_mounts_complete
     wait /sys/class/power_supply/battery
@@ -36,12 +38,6 @@ on moto-charger
     write /sys/devices/system/cpu/cpu6/online 0
     write /sys/devices/system/cpu/cpu7/online 0
 
-service vendor.thermal-com /vendor/bin/thermal-engine-v2 --minimode
-    class charger
-    user root
-    group root system oem_2907
-    socket thermal-send-client stream 0666 system oem_2907
-    socket thermal-recv-client stream 0660 system oem_2907
-    socket thermal-recv-passive-client stream 0666 system oem_2907
-    socket thermal-send-rule stream 0660 system oem_2907
-    disabled
+on moto-charger && property:ro.vendor.build.motfactory=1
+    wait /sys/class/power_supply/battery/device/factory_image_mode
+    write /sys/class/power_supply/battery/device/factory_image_mode 1
