@@ -43,7 +43,7 @@
 -->
 
 <!--
- Cape Non-Secure decoder capabilities
+ Taro Non-Secure decoder capabilities
  (MB is defined as 16x16)
  _____________________________________________________________________
  | Codec       | W       H       fps     Mbps    MB/s        Max MB/s|
@@ -62,7 +62,7 @@
  |             | 7680    4320    60      100     7776000             |
  |_____________|_____________________________________________________|
 
- Cape Secure decoder capabilities
+ Taro Secure decoder capabilities
  (MB is defined as 16x16)
  __________________________________________________________________
  | Codec    | W       H       fps     Mbps    MB/s        Max MB/s|
@@ -84,7 +84,7 @@
  |          | 4096    2304    30      40      1105920             |
  |__________|_____________________________________________________|
 
- Cape Non-Secure encoder capabilities (Secure not supported)
+ Taro Non-Secure encoder capabilities (Secure not supported)
  (MB is defined as 16x16)
  __________________________________________________________________
  | Codec    | W       H       fps     Mbps    MB/s        Max MB/s|
