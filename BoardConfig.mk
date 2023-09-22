@@ -16,7 +16,7 @@
 
 BOARD_VENDOR := motorola
 
-DEVICE_PATH := device/motorola/eqs
+DEVICE_PATH := device/motorola/hiphi
 
 # Architecture
 TARGET_ARCH := arm64
@@ -34,7 +34,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := kryo385
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := eqs
+TARGET_BOOTLOADER_BOARD_NAME := taro
 TARGET_NO_BOOTLOADER := true
 
 # Build
@@ -55,15 +55,15 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
-TARGET_KERNEL_SOURCE := kernel/motorola/sm8475
+TARGET_KERNEL_SOURCE := kernel/motorola/sm8450
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/waipio_GKI.config \
     vendor/ext_config/moto-waipio.config \
     vendor/ext_config/moto-waipio-gki.config \
-	vendor/ext_config/moto-waipio-eqs.config \
+	vendor/ext_config/moto-waipio-hiphi.config \
     vendor/ext_config/lineage-moto-waipio.config \
-	vendor/ext_config/lineage-moto-waipio-eqs.config
+	vendor/ext_config/lineage-moto-waipio-hiphi.config
 KERNEL_LTO := none
 
 # Kernel Modules
@@ -132,7 +132,7 @@ TARGET_ENABLE_MEDIADRM_64 := true
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # Fingerprint
-#TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.eqs
+#TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.hiphi
 #SOONG_CONFIG_qtidisplay_udfps := true
 
 # GPS
@@ -142,15 +142,15 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/device_framework_matrix.xml \
-    $(DEVICE_PATH)/device_framework_matrix_eqs.xml \
+    $(DEVICE_PATH)/device_framework_matrix_hiphi.xml \
     vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
-DEVICE_MANIFEST_SKUS := cape
-DEVICE_MANIFEST_CAPE_FILES += \
-    $(DEVICE_PATH)/manifest_cape.xml \
-    $(DEVICE_PATH)/manifest_eqs.xml
+DEVICE_MANIFEST_SKUS := taro
+DEVICE_MANIFEST_TARO_FILES += \
+    $(DEVICE_PATH)/manifest_taro.xml \
+    $(DEVICE_PATH)/manifest_hiphi.xml
 ODM_MANIFEST_SKUS += dne
-ODM_MANIFEST_DNE_FILES := $(DEVICE_PATH)/manifest_eqs_ese.xml
+ODM_MANIFEST_DNE_FILES := $(DEVICE_PATH)/manifest_hiphi_ese.xml
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
@@ -209,7 +209,7 @@ TARGET_RECOVERY_WIPE := $(DEVICE_PATH)/recovery/recovery.wipe
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security
-VENDOR_SECURITY_PATCH := 2023-04-01
+VENDOR_SECURITY_PATCH := 2023-06-01
 
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
@@ -249,4 +249,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
-include vendor/motorola/eqs/BoardConfigVendor.mk
+include vendor/motorola/hiphi/BoardConfigVendor.mk
