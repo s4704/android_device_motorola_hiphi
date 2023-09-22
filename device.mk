@@ -58,10 +58,10 @@ PRODUCT_PACKAGES += \
     WifiResCommon_Sys \
     FrameworksResTarget \
     WifiResTarget \
-    FrameworksResEqs \
-    LineageSystemUIEqs \
-    SettingsProviderResEqs \
-    SystemUIResEqs
+    FrameworksResHiphi \
+    LineageSystemUIHiphi \
+    SettingsProviderResHiphi \
+    SystemUIResHiphi
 
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
@@ -133,12 +133,12 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/sku_cape/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_cape/audio_effects.xml \
-    $(LOCAL_PATH)/audio/sku_cape/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_cape/audio_policy_configuration.xml \
-    $(LOCAL_PATH)/audio/sku_cape/audio_policy_configuration_a2dp_offload_disabled.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_cape/audio_policy_configuration_a2dp_offload_disabled.xml \
-    $(LOCAL_PATH)/audio/sku_cape/mixer_paths_waipio_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_cape/mixer_paths_waipio_mtp.xml \
-    $(LOCAL_PATH)/audio/sku_cape/resourcemanager_waipio_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_cape/resourcemanager_waipio_mtp.xml \
-    $(LOCAL_PATH)/audio/sku_cape_qssi/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_cape_qssi/audio_policy_configuration.xml \
+    $(LOCAL_PATH)/audio/sku_taro/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_taro/audio_effects.xml \
+    $(LOCAL_PATH)/audio/sku_taro/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_taro/audio_policy_configuration.xml \
+    $(LOCAL_PATH)/audio/sku_taro/audio_policy_configuration_a2dp_offload_disabled.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_taro/audio_policy_configuration_a2dp_offload_disabled.xml \
+    $(LOCAL_PATH)/audio/sku_taro/mixer_paths_waipio_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_taro/mixer_paths_waipio_mtp.xml \
+    $(LOCAL_PATH)/audio/sku_taro/resourcemanager_waipio_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_taro/resourcemanager_waipio_mtp.xml \
+    $(LOCAL_PATH)/audio/sku_taro_qssi/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_taro_qssi/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(LOCAL_PATH)/audio/audio_ext_spkr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_ext_spkr.conf \
@@ -204,7 +204,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.eqs
+    android.hardware.biometrics.fingerprint@2.3-service.hiphi
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -295,17 +295,17 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/media/media_codecs_cape.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_cape.xml \
-    $(LOCAL_PATH)/media/media_codecs_cape_custom.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_cape_custom.xml \
-    $(LOCAL_PATH)/media/media_codecs_cape_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_cape_vendor.xml \
+    $(LOCAL_PATH)/media/media_codecs_taro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_taro.xml \
+    $(LOCAL_PATH)/media/media_codecs_taro_custom.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_taro_custom.xml \
+    $(LOCAL_PATH)/media/media_codecs_taro_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_taro_vendor.xml \
     $(LOCAL_PATH)/media/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
-    $(LOCAL_PATH)/media/media_codecs_performance_cape.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_cape.xml \
-    $(LOCAL_PATH)/media/media_codecs_performance_cape_custom.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_cape_custom.xml \
-    $(LOCAL_PATH)/media/media_codecs_performance_cape_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_cape_vendor.xml \
+    $(LOCAL_PATH)/media/media_codecs_performance_taro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_taro.xml \
+    $(LOCAL_PATH)/media/media_codecs_performance_taro_custom.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_taro_custom.xml \
+    $(LOCAL_PATH)/media/media_codecs_performance_taro_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_taro_vendor.xml \
     $(LOCAL_PATH)/media/media_profiles.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles.xml \
     $(LOCAL_PATH)/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
     $(LOCAL_PATH)/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml \
-    $(LOCAL_PATH)/media/media_profiles_cape.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_cape.xml
+    $(LOCAL_PATH)/media/media_profiles_taro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_taro.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
@@ -395,13 +395,13 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2021-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
-    frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_cape/android.hardware.sensor.accelerometer.xml \
-    frameworks/native/data/etc/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_cape/android.hardware.sensor.compass.xml \
-    frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_cape/android.hardware.sensor.gyroscope.xml \
-    frameworks/native/data/etc/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_cape/android.hardware.sensor.light.xml \
-    frameworks/native/data/etc/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_cape/android.hardware.sensor.proximity.xml \
-    frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_cape/android.hardware.sensor.stepcounter.xml \
-    frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_cape/android.hardware.sensor.stepdetector.xml \
+    frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_taro/android.hardware.sensor.accelerometer.xml \
+    frameworks/native/data/etc/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_taro/android.hardware.sensor.compass.xml \
+    frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_taro/android.hardware.sensor.gyroscope.xml \
+    frameworks/native/data/etc/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_taro/android.hardware.sensor.light.xml \
+    frameworks/native/data/etc/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_taro/android.hardware.sensor.proximity.xml \
+    frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_taro/android.hardware.sensor.stepcounter.xml \
+    frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_taro/android.hardware.sensor.stepdetector.xml \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_diwali/android.hardware.sensor.accelerometer.xml \
     frameworks/native/data/etc/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_diwali/android.hardware.sensor.compass.xml \
     frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_diwali/android.hardware.sensor.gyroscope.xml \
@@ -419,8 +419,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/android.hardware.hardware_keystore_v100.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_cape/android.hardware.hardware_keystore.xml \
-    $(LOCAL_PATH)/configs/android.hardware.strongbox_keystore_v4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_cape/android.hardware.strongbox_keystore.xml \
+    $(LOCAL_PATH)/configs/android.hardware.hardware_keystore_v100.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_taro/android.hardware.hardware_keystore.xml \
+    $(LOCAL_PATH)/configs/android.hardware.strongbox_keystore_v4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_taro/android.hardware.strongbox_keystore.xml \
     $(LOCAL_PATH)/configs/android.hardware.hardware_keystore_v100.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_taro/android.hardware.hardware_keystore.xml \
     $(LOCAL_PATH)/configs/android.hardware.strongbox_keystore_v4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_taro/android.hardware.strongbox_keystore.xml
 
@@ -436,7 +436,7 @@ PRODUCT_PACKAGES += \
 
 # PowerShare
 PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.eqs
+    vendor.lineage.powershare@1.0-service.hiphi
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -471,7 +471,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.multihal \
     libsensorndkbridge \
-    sensors.eqs
+    sensors.hiphi
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
@@ -512,7 +512,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.eqs
+    vendor.lineage.touch@1.0-service.hiphi
 
 # Trusted UI
 PRODUCT_PACKAGES += \
@@ -586,4 +586,4 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/motorola/eqs/eqs-vendor.mk)
+$(call inherit-product, vendor/motorola/hiphi/hiphi-vendor.mk)
