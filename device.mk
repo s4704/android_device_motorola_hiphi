@@ -346,6 +346,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/etc/st21nfc_conf_ss.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st21nfc_conf_ss.txt \
     $(LOCAL_PATH)/nfc/firmware/st21nfc_fw7.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st21nfc_fw7.bin \
     $(LOCAL_PATH)/nfc/firmware/st21nfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st21nfc_fw.bin \
+    $(LOCAL_PATH)/nfc/etc/st54j_conf_ds.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st54j_conf_ds.txt \
+    $(LOCAL_PATH)/nfc/etc/st54j_conf_ss.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st54j_conf_ss.txt \
+    $(LOCAL_PATH)/nfc/firmware/st54j_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st54j_fw.bin
+
 # OMX
 PRODUCT_PACKAGES += \
     libcodec2_hidl@1.2.vendor \
