@@ -1249,16 +1249,6 @@ vendor/etc/init/android.hardware.nfc@1.2-service.st.rc
 vendor/etc/init/hw/init.vendor.st21nfc.rc
 vendor/lib64/nfc_nci.st21nfc.st.so
 
-# NFC - configs
-vendor/etc/libnfc-hal-st.conf
-vendor/etc/libnfc-nci-st.conf
-vendor/etc/st21nfc_conf_ds.txt
-vendor/etc/st21nfc_conf_ss.txt
-
-# NFC firmware
-vendor/firmware/st21nfc_fw.bin
-vendor/firmware/st21nfc_fw7.bin
-
 # Neural networks
 vendor/lib64/libQnnHtp.so
 vendor/lib64/libQnnHtpPrepare.so
