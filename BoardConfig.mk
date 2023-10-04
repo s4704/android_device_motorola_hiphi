@@ -152,8 +152,13 @@ DEVICE_MANIFEST_SKUS := taro
 DEVICE_MANIFEST_TARO_FILES += \
     $(DEVICE_PATH)/manifest_taro.xml \
     $(DEVICE_PATH)/manifest_hiphi.xml
-ODM_MANIFEST_SKUS += dne
-ODM_MANIFEST_DNE_FILES := $(DEVICE_PATH)/manifest_hiphi_ese.xml
+
+# ODM Manifests
+ODM_MANIFEST_SKUS := dn n np dnp
+ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/manifest_dn.xml
+ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/manifest_n.xml
+ODM_MANIFEST_NP_FILES := $(DEVICE_PATH)/manifest_np.xml
+ODM_MANIFEST_DNP_FILES := $(DEVICE_PATH)/manifest_dnp.xml
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
