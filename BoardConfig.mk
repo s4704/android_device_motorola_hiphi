@@ -62,6 +62,8 @@ TARGET_KERNEL_CONFIG := \
     vendor/ext_config/moto-waipio.config \
     vendor/ext_config/moto-waipio-gki.config \
 	vendor/ext_config/moto-waipio-hiphi.config \
+	vendor/ext_config/moto-waipio-hiphic.config \
+	vendor/ext_config/moto-waipio-hiphid.config \
     vendor/ext_config/lineage-moto-waipio.config \
 	vendor/ext_config/lineage-moto-waipio-hiphi.config
 KERNEL_LTO := none
