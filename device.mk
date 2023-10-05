@@ -612,5 +612,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+# Disable ADB authentication and use root shell
+ADDITIONAL_DEFAULT_PROPERTIES += \
+	ro.adb.secure=0 \
+	ro.secure=0
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/motorola/hiphi/hiphi-vendor.mk)
