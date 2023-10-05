@@ -1522,7 +1522,7 @@ product/framework/uimgbamanagerlibrary.jar
 product/framework/uimservicelibrary.jar
 
 # RIL - system_ext
--system_ext/app/QtiTelephony/QtiTelephony.apk|8eab7a7ec6ec1c5e51876e102fc91a3818c3feab
+-system_ext/app/QtiTelephony/QtiTelephony.apk|9974b7c0c7853fbe1ef591311ce651868847ff67
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_libpermissions.xml
@@ -1704,7 +1704,7 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 
 # RIL - IMS - system_ext
--system_ext/priv-app/ims/ims.apk|ebb79128d1639c5012b8cdd454220e84f21e416c
+-system_ext/priv-app/ims/ims.apk|150bdd698092a5c2a365e79e749f82c75a1b86bd
 -system_ext/app/ImsRcsService/ImsRcsService.apk
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
 system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
