@@ -8,4 +8,233 @@
             <instance>default</instance>
         </interface>
     </hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.bluetooth.audio</name>
+    <version>2.0-2</version>
+    <interface>
+        <name>IBluetoothAudioProvidersFactory</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.bluetooth.a2dp</name>
+    <version>1.0</version>
+    <interface>
+        <name>IBluetoothAudioOffload</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.configstore</name>
+    <version>1.0-1</version>
+    <interface>
+        <name>ISurfaceFlingerConfigs</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.audio</name>
+    <version>7.0-1</version>
+    <interface>
+        <name>IDevicesFactory</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.audio.effect</name>
+    <version>7.0-1</version>
+    <interface>
+        <name>IEffectsFactory</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.qti.ims.factory</name>
+    <version>2.0-2</version>
+    <interface>
+        <name>IImsFactory</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.usb.gadget</name>
+    <version>1.0</version>
+    <interface>
+        <name>IUsbGadget</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>motorola.hardware.health</name>
+    <version>1.0</version>
+    <interface>
+        <name>IMotHealth</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.ir</name>
+    <version>1.0</version>
+    <interface>
+        <name>IConsumerIr</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.frameworks.schedulerservice</name>
+    <version>1.0</version>
+    <interface>
+        <name>ISchedulingPolicyService</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.oemlock</name>
+    <version>1.0</version>
+    <interface>
+        <name>IOemLock</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.light</name>
+    <version>2.0</version>
+    <interface>
+        <name>ILight</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.lineage.trust</name>
+    <version>1.0</version>
+    <interface>
+        <name>IUsbRestrict</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.weaver</name>
+    <version>1.0</version>
+    <interface>
+        <name>IWeaver</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.authsecret</name>
+    <version>1.0</version>
+    <interface>
+        <name>IAuthSecret</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.lineage.touch</name>
+    <version>1.0</version>
+    <interface>
+        <name>IKeyDisabler</name>
+        <instance>defaultgnss</instance>
+    </interface>
+    <interface>
+        <name>IStylusMode</name>
+        <instance>defaultgnss</instance>
+    </interface>
+    <interface>
+        <name>IGloveMode</name>
+        <instance>defaultgnss</instance>
+    </interface>
+    <interface>
+        <name>IKeySwapper</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.secure_element</name>
+    <version>1.0-2</version>
+    <interface>
+        <name>ISecureElement</name>
+        <instance>eSE1gnss</instance>
+        <instance>SIM3gnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.bluetooth</name>
+    <version>1.0-1</version>
+    <interface>
+        <name>IBluetoothHci</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.lineage.livedisplay</name>
+    <version>2.0</version>
+    <interface>
+        <name>IAdaptiveBacklight</name>
+        <instance>defaultgnss</instance>
+    </interface>
+    <interface>
+        <name>IColorEnhancement</name>
+        <instance>defaultgnss</instance>
+    </interface>
+    <interface>
+        <name>IAutoContrast</name>
+        <instance>defaultgnss</instance>
+    </interface>
+    <interface>
+        <name>IDisplayColorCalibration</name>
+        <instance>defaultgnss</instance>
+    </interface>
+    <interface>
+        <name>IDisplayModes</name>
+        <instance>defaultgnss</instance>
+    </interface>
+    <interface>
+        <name>IReadingEnhancement</name>
+        <instance>defaultgnss</instance>
+    </interface>
+    <interface>
+        <name>IColorBalance</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.qti.memory.pasrmanager</name>
+    <version>1.0-1</version>
+    <interface>
+        <name>IPasrManager</name>
+        <instance>pasrhalgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.power.stats</name>
+    <version>1.0</version>
+    <interface>
+        <name>IPowerStats</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.frameworks.stats</name>
+    <version>1.0</version>
+    <interface>
+        <name>IStats</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.memtrack</name>
+    <version>1.0</version>
+    <interface>
+        <name>IMemtrack</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.renderscript</name>
+    <version>1.0</version>
+    <interface>
+        <name>IDevice</name>
+        <instance>defaultgnss</instance>
+    </interface>
+</hal>
 </compatibility-matrix>
