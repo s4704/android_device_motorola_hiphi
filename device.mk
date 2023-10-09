@@ -204,7 +204,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service
+    android.hardware.biometrics.fingerprint@2.1-service.xpeng \
+    com.motorola.hardware.biometric.fingerprint@1.0.vendor
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
