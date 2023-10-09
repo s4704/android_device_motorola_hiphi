@@ -207,6 +207,11 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xpeng \
     com.motorola.hardware.biometric.fingerprint@1.0.vendor
 
+$(foreach f,$(wildcard $(LOCAL_PATH)/idc/*.idc),\
+        $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/usr/idc/$(notdir $f)))
+$(foreach f,$(wildcard $(LOCAL_PATH)/keylayout/*.kl),\
+        $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/$(notdir $f)))
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
