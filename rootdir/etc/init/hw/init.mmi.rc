@@ -543,7 +543,14 @@ service vendor.hal-fps-sh /vendor/bin/init.oem.fingerprint2.sh
     group system
     oneshot
 
-service fpc_ident /vendor/bin/hw/fpc_ident
+service gf_ident /vendor/bin/goodix_ident
+    class late_start
+    user system
+    group system input uhid
+    oneshot
+    disabled
+
+service fpc_ident /vendor/bin/fpc_ident
     class late_start
     user system
     group system
