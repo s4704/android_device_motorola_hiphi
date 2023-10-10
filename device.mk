@@ -204,7 +204,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xpeng \
+    android.hardware.biometrics.fingerprint@2.1-service.hiphi \
     com.motorola.hardware.biometric.fingerprint@1.0.vendor
 
 $(foreach f,$(wildcard $(LOCAL_PATH)/idc/*.idc),\
