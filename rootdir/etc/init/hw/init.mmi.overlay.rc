@@ -39,6 +39,9 @@ on early-boot && property:ro.vendor.build.motfactory=1
 
 on post-fs
     exec_start ufs_ffu
+    # Sensors
+    chown system system /sys/devices/platform/soc/990000.i2c/i2c-0/0-0049/touchscreen/primary/double_tap_enabled
+    chown system system /sys/devices/platform/soc/990000.i2c/i2c-0/0-0049/touchscreen/primary/double_tap_pressed
 
 on post-fs-data
     exec_start vendor.ident-fps-overlay-sh
