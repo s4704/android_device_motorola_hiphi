@@ -136,6 +136,7 @@ ro.vendor.bluetooth.csip_qti=true
 # Camera
 camera.disable_zsl_mode=1
 persist.vendor.camera.physical.num=4
+ro.camera.enableCamera1MaxZsl=1
 
 # Dalvik
 dalvik.vm.heapstartsize=16m
