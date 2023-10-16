@@ -7,3 +7,6 @@ audio.sys.offload.pstimeout.secs=3
 
 # Media
 media.stagefright.audio.deep=false
+
+# Motorola
+ro.mot.build.customerid=global
