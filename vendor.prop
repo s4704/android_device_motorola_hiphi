@@ -301,6 +301,10 @@ ro.surface_flinger.set_touch_timer_ms=2000
 ro.surface_flinger.use_smart_90_for_video=true
 ro.surface_flinger.enable_frame_rate_override=true
 
+# Telephony
+ro.telephony.sim_slots.count=2
+telephony.active_modems.max_count=2
+
 # USB
 sys.usb.mtp.batchcancel=1
 sys.usb.mtp.device_type=3
