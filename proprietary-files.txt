@@ -1741,6 +1741,10 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 # RIL - IMS - system_ext
 -system_ext/priv-app/ims/ims.apk|199132c9e3c5254237823f0ebe3829ab721563e4
 -system_ext/app/ImsRcsService/ImsRcsService.apk
+system/etc/permissions/moto-ims-ext.xml:system_ext/etc/permissions/moto-ims-ext.xml
+system/etc/permissions/moto-telephony.xml:system_ext/etc/permissions/moto-telephony.xml
+system/framework/moto-ims-ext.jar:system_ext/framework/moto-ims-ext.jar
+system/framework/moto-telephony.jar:system_ext/framework/moto-telephony.jar
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
 system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
