@@ -122,9 +122,7 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libsndcardparser \
-    libtinycompress\
-    vendor.qti.hardware.AGMIPC@1.0-service \
-    vendor.qti.hardware.pal@1.0-impl \
+    libtinycompress \
     libhfp_pal
 
 PRODUCT_COPY_FILES += \
