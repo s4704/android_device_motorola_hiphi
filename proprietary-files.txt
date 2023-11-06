@@ -122,6 +122,7 @@ vendor/lib/libqtigefar.so
 vendor/lib/libar-acdb.so
 vendor/lib/lib_lvacfs.so
 vendor/lib/liblvacfs_wrapper.so
+vendor/lib/libbatterylistener.so
 vendor/lib64/hw/audio.primary.taro.so
 vendor/lib64/libadm.so
 vendor/lib64/libadsprpc.so
@@ -141,6 +142,7 @@ vendor/lib64/libqtigefar.so
 vendor/lib64/libar-acdb.so
 vendor/lib64/lib_lvacfs.so
 vendor/lib64/liblvacfs_wrapper.so
+vendor/lib64/libbatterylistener.so
 
 # Audio misc
 vendor/etc/ap_gain.bin
