@@ -271,6 +271,7 @@ persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.aosp_usr_pref_sel=true
 persist.vendor.radio.flexmap_type=none
 persist.vendor.radio.enable_temp_dds=true
+ro.vendor.radio.imei.sv=1
 
 # Sensors
 ro.vendor.sensors.glance_approach=false
