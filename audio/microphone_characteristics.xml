@@ -61,10 +61,9 @@
                     <mic_info mic_device_id="builtin_mic_2"
                         channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
                 </snd_dev>
-                <snd_dev in_snd_device="PAL_DEVICE_IN_USB_ACCESSORY" fnn_supported="1 1"/>
-                <snd_dev in_snd_device="PAL_DEVICE_IN_USB_DEVICE" fnn_supported="1 1"/>
-                <snd_dev in_snd_device="PAL_DEVICE_IN_USB_HEADSET" fnn_supported="1 1"/>
-                <snd_dev in_snd_device="PAL_DEVICE_IN_BLUETOOTH_SCO_HEADSET" fnn_supported="0 1"/>
+                <snd_dev in_snd_device="PAL_DEVICE_IN_USB_ACCESSORY" fnn_supported="1 0"/>
+                <snd_dev in_snd_device="PAL_DEVICE_IN_USB_DEVICE" fnn_supported="1 0"/>
+                <snd_dev in_snd_device="PAL_DEVICE_IN_USB_HEADSET" fnn_supported="1 0"/>
                 <snd_dev in_snd_device="PAL_DEVICE_IN_HANDSET_VA_MIC">
                     <mic_info mic_device_id="builtin_mic_1"
                         channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
